@@ -54,7 +54,7 @@ function editFolderName(folderName, renameName) {
       newFolderButton.setAttribute("contentEditable", "false"));
 }
 
-doShare("File1");
+doShare("Home");
 function doShare(fileName) {
   var i;
   var x = document.getElementsByClassName("file");
