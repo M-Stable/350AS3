@@ -11,3 +11,13 @@ function sendMsg() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+  $('.task-row').click(function ()
+{
+   $(this).find('input[type=checkbox]').prop("checked", !$(this).find('input[type=checkbox]').prop("checked"));
+});
+
+$('.check').click(function ()
+{
+   $(this).prop("checked", !$(this).prop("checked"));
+});
