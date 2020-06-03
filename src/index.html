@@ -30,6 +30,8 @@
       padding: 16px;
     }
   </style>
+  <script src="jquery-3.5.1.js"></script>
+  <script src="homepage.js"></script>
   <body>
     <!-- Side Navigation -->
     <nav
@@ -285,15 +287,6 @@
             <option value="audi">Allow edit</option>
           </select>
         </div>
-        
-      </div>
-    </div>
-
-
-       >Share <i class="fa fa-paper-plane"></i
-            ></a>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -322,27 +315,7 @@
       title="Close Sidemenu"
       id="myOverlay"
     ></div>
-
-    <!-- Page content -->
-    <div class="w3-main" style="margin-left:320px;">
-      <!-- Home Page -->
-      <div id="Home" class="w3-container file">
-        <h1>My Files</h1>
-        <hr/>
-        <p>
-          File 1  File 2   File 3
-        </p>
-        <h1>Shared Files</h1>
-        <hr/>
-        <p>
-          File 1  File 2   File 3
-        </p>
-        <h1>Shared with me</h1>
-        <hr/>
-        <p>
-          File 1  File 2   File 3
-        </p>
-      </div>
+      
       <!-- Files -->
       <i
         class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
@@ -493,6 +466,76 @@
       </div>      
       <span onclick="openNav()">open</span>
     </div>
+
+        <!-- Page content -->
+        <div class="w3-main" style="margin-left:320px;">
+          <!-- Home Page -->
+          <div id="Home" class="w3-container file">
+            <div>
+              <h1>My Files</h1>
+              <hr/>
+              <div id="my_Files_Parent">
+                <div class="homepage-folder">
+                  <img src="folderIcon.png">
+                  <p style="text-align: center;">SOFTENG 350</p>
+                </div>
+                <div class="homepage-folder">
+                  <img src="folderIcon.png">
+                  <p style="text-align: center;">SOFTENG 351</p>
+                </div>
+                <div class="homepage-folder">
+                  <img src="folderIcon.png">
+                  <p style="text-align: center;">SOFTENG 364</p>
+                </div>
+                <div class="homepage-folder plus-icon" onclick="addMyFile()">
+                  <img src="plus.png">
+                  <p style="text-align: center;">Add folder</p>
+                </div>
+                <div id="my_Files_Parent">
+                  <div  class="homepage-folder">
+                    <img src="fileIcon1.png">
+                    <p style="text-align: center;">File 1</p>
+                  </div>
+                  <div  class="homepage-folder">
+                    <img src="fileIcon2.png">
+                    <p style="text-align: center;">File 2</p>
+                  </div>
+                  <div  class="homepage-folder">
+                    <img src="fileIcon3.png">
+                    <p style="text-align: center;">File 3</p>
+                  </div>
+                  <!-- https://stackoverflow.com/questions/14414924/upload-image-by-clicking-exisiting-image/14415052 -->
+                  <input id="upload_files" class="hidden" type="file">
+                  <div class="homepage-folder plus-icon" onclick="uploadFile()">
+                    <img src="plus.png">
+                    <p style="text-align: center;">Add file</p>
+                  </div>
+              </div>
+            </div>
+            <div>
+              <h1>Shared Files</h1>
+              <hr/>
+              <div id = "shared_Files_Parent">
+                <div  class="homepage-folder">
+                  <img src="fileIcon1.png">
+                  <p style="text-align: center;">File 1</p>
+                </div>
+                <div  class="homepage-folder">
+                  <img src="fileIcon2.png">
+                  <p style="text-align: center;">File 2</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h1>Shared with me</h1>
+              <hr/>
+              <div id = "shared_with_me_Parent">
+                <div  class="homepage-folder">
+                  <img src="worddoc.png">
+                  <p style="text-align: center;">clee383_hw2</p>
+                </div>
+            </div>
+          </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
