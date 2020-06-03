@@ -1,3 +1,11 @@
+function addMyFile(){
+  $('<div class="homepage-folder"> <img src="../images/folderIcon.png"> <p style="text-align: center;">New folder</p></div>').insertBefore('.homepage-folder.plus-icon:first')
+}
+
+function uploadFile(){
+  $('#upload_files').click();
+}
+
 function sendMsg() {
     document.getElementById("myMsgBox").style.display = "block";
     var text1 = document.getElementById("textarea").value;
@@ -36,3 +44,7 @@ $('.check').click(function ()
 }
 $(this).data("clicks", !clicks);
 });
+
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );

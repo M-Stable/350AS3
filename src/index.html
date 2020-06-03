@@ -30,8 +30,8 @@
       padding: 16px;
     }
   </style>
-  <script src="jquery-3.5.1.js"></script>
-  <script src="homepage.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <body>
     <!-- Side Navigation -->
     <nav
@@ -99,7 +99,7 @@
           <div class="w3-container">
             <img
               class="w3-round w3-margin-right"
-              src="./fileIcon3.png"
+              src="../images/fileIcon3.png"
               style="width:15%;"
             /><span class="w3-opacity w3-large">File 1</span>
             <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
@@ -114,7 +114,7 @@
           <div class="w3-container">
             <img
               class="w3-round w3-margin-right"
-              src="./fileIcon5.png"
+              src="../images/fileIcon5.png"
               style="width:15%;"
             /><span class="w3-opacity w3-large">File 2</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -128,7 +128,7 @@
           <div class="w3-container">
             <img
               class="w3-round w3-margin-right"
-              src="./fileIcon2.png"
+              src="../images/fileIcon2.png"
               style="width:15%;"
             /><span class="w3-opacity w3-large">File 3</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -332,7 +332,7 @@
         <br />
         <img
           class="w3-round  w3-animate-top"
-          src="./fileIcon3.png"
+          src="../images/fileIcon3.png"
           style="width:20%;"
         />
         <h5 class="w3-opacity">File 1</h5>
@@ -362,7 +362,7 @@
         <br />
         <img
           class="w3-round w3-animate-top"
-          src="./fileIcon5.png"
+          src="../images/fileIcon5.png"
           style="width:20%;"
         />
         <h5 class="w3-opacity">File 2</h5>
@@ -391,7 +391,7 @@
         <br />
         <img
           class="w3-round w3-animate-top"
-          src="./fileIcon2.png"
+          src="../images/fileIcon2.png"
           style="width:20%;"
         />
         <h5 class="w3-opacity">File 3</h5>
@@ -443,13 +443,13 @@
           <span class="task-delegation-title">Taskboard</span>
           <div class="task-delegation-wrapper">
             <a class="task-row"><input class="check" type="checkbox" style="margin: 5px;"> Complete market analysis
-            <img src="./fileIcon2.png"/>
+            <img src="../images/fileIcon2.png"/>
             </a>
             <a class="task-row"><input class="check" type="checkbox" style="margin: 5px;"> Rework the conclusion
-            <img src="./fileIcon1.png"/>
+            <img src="../images/fileIcon1.png"/>
             </a>
             <a class="task-row"><input class="check" type="checkbox" style="margin: 5px;"> Proofread & submit report
-            <img src="./fileIcon2.png"/>
+            <img src="../images/fileIcon2.png"/>
             </a>
             <a style="color: gray; padding-left: 5px;"> 
               <i class="fa fa-plus"></i>
@@ -465,21 +465,21 @@
                 <span>Hey guys :)</span>
                 <br>
                 <span class="time-others">11:00am</span>
-                <img src="user2.JPG"/>
+                <img src="../images/user2.JPG"/>
               </div>
 
               <div class="container" style="padding: 10px;">
                 <span>Hello~~ I've completed my section!</span>
                 <br>
                 <span class="time-others">11:02am</span>
-                <img src="user1.JPG"/>
+                <img src="../images/user1.JPG"/>
               </div>
       
               <div class="container-me" id="myMsgBox" style="padding: 10px;">
                 <span id="msgcontent" class="msg">Great work!!</span>
                 <br>
                 <span class="time-me">11:05am</span>
-                <img src="./fileIcon2.png"/>
+                <img src="../images/fileIcon2.png"/>
               </div>
           </div>
       
@@ -503,40 +503,40 @@
               <hr/>
               <div id="my_Files_Parent">
                 <div class="homepage-folder" onclick="openNav()">
-                  <img src="folderIcon.png">
+                  <img src="../images/folderIcon.png">
                   <p style="text-align: center;">SOFTENG 350</p>
                 </div>
                 <div class="homepage-folder" onclick="openNav()">
-                  <img src="folderIcon.png">
+                  <img src="../images/folderIcon.png">
                   <p style="text-align: center;">SOFTENG 351</p>
                 </div>
                 <div class="homepage-folder" onclick="openNav()">
-                  <img src="folderIcon.png">
+                  <img src="../images/folderIcon.png">
                   <p style="text-align: center;">SOFTENG 364</p>
                 </div>
                 <div class="homepage-folder plus-icon" onclick="addMyFile()">
-                  <img src="plus.png">
+                  <img src="../images/plus.png">
                   <p style="text-align: center;">Add folder</p>
                 </div>
                 <br/><br/>
                 <div id="my_Files_Parent">
                   <div  class="homepage-folder1" onclick="openNav()">
-                    <img class="image1" src="fileIcon1.png" onclick="hideNotification()">
-                    <img id="notification" class="notification" src="icon2.png">
+                    <img class="image1" src="../images/fileIcon1.png" onclick="hideNotification()">
+                    <img id="notification" class="notification" src="../images/icon2.png">
                     <p style="text-align: center;">File 1</p>
                   </div>
                   <div  class="homepage-folder" onclick="openNav()">
-                    <img src="fileIcon2.png">
+                    <img src="../images/fileIcon2.png">
                     <p style="text-align: center;">File 2</p>
                   </div>
                   <div  class="homepage-folder" onclick="openNav()">
-                    <img src="fileIcon3.png">
+                    <img src="../images/fileIcon3.png">
                     <p style="text-align: center;">File 3</p>
                   </div>
                   <!-- https://stackoverflow.com/questions/14414924/upload-image-by-clicking-exisiting-image/14415052 -->
                   <input id="upload_files" class="hidden" type="file">
                   <div class="homepage-folder plus-icon" onclick="uploadFile()">
-                    <img src="plus.png">
+                    <img src="../images/plus.png">
                     <p style="text-align: center;">Add file</p>
                   </div>
               </div>
@@ -546,11 +546,11 @@
               <hr/>
               <div id = "shared_Files_Parent">
                 <div  class="homepage-folder" onclick="openNav()">
-                  <img src="fileIcon1.png">
+                  <img src="../images/fileIcon1.png">
                   <p style="text-align: center;">File 1</p>
                 </div>
                 <div  class="homepage-folder" onclick="openNav()">
-                  <img src="fileIcon2.png">
+                  <img src="../images/fileIcon2.png">
                   <p style="text-align: center;">File 2</p>
                 </div>
               </div>
@@ -560,20 +560,13 @@
               <hr/>
               <div id = "shared_with_me_Parent" onclick="openNav()">
                 <div  class="homepage-folder">
-                  <img src="worddoc.png">
+                  <img src="../images/worddoc.png">
                   <p style="text-align: center;">clee383_hw2</p>
                 </div>
             </div>
           </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="index.js"></script>
     <script src="properties.js"></script>
-    <script>
-      $( function() {
-        $( "#datepicker" ).datepicker();
-      } );
-      </script>
   </body>
 </html>
