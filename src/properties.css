@@ -23,12 +23,23 @@ body {
     display: block;
     transition: 0.3s;
   }
+
+  .sidenav .file-title {
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
   .sidenav div {
     padding: 0px 10px 0px 0px;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: black;
   }
   
   .sidenav .closebtn {
