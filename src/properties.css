@@ -66,19 +66,15 @@ body {
     .sidenav a {font-size: 18px;}
   }
   
-  
-  
-  
-  
   /* The popup chat - hidden by default */
   .sidenav .deadline {
     position: absolute;
     width: 260px;
     height: 70px;
     margin-left: 20px;
-    bottom: 400px;
+    top: 110px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .deadline-title {
@@ -88,7 +84,7 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
   }
   
   .deadline .deadline-wrapper {
@@ -100,27 +96,49 @@ body {
     padding: 5px 10px;
     font-size: 20px;
   }
+
+
+
+  .sidenav .task-delegation {
+    width: 260px;
+    height: 150px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 390px;
+    background-color: white;
+    border-radius: 5px;
+  }
   
+  .task-delegation-title {
+    background-color: orange;
+    position: absolute;
+    width: 260px;
+    height: 30px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+  }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  .task-delegation .task-delegation-wrapper {
+    position: absolute;
+    width: 260px;
+    height: 120px;
+    top: 30px;
+    color: black;
+    font-size: 20px;
+  }
+
+  .task-delegation a {
+    font-size: 15px;
+  }
   
   /* The popup chat - hidden by default */
   .sidenav .form-popup {
     position: absolute;
     width: 280px;
-    height: 380px;
+    height: 370px;
     margin-left: 10px;
     bottom: 10px;
-    border: 3px solid #f1f1f1;
   }
   
   /* Add styles to the form container */
@@ -138,12 +156,6 @@ body {
     border: none;
     background: white;
     resize: none;
-  }
-  
-  /* When the textarea gets focus, do something */
-  .sidenav .form-popup textarea:focus {
-    background-color: #ddd;
-    outline: none;
   }
   
   /* Set a style for the submit/login button */
@@ -171,7 +183,7 @@ body {
     display: table-cell;
     vertical-align: bottom;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 260px;
     background-color: white;
   }
@@ -181,21 +193,22 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 255px;
+    width: 260px;
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
   }
   
   /* Chat containers */
   .container {
     border: 2px solid #dedede;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 0;
     float: left;
     width: 200px;
-    margin: 0px 0px 10px 10px;
+    margin: 0px 0px 30px 10px;
+    position: relative;
   }
   
   
@@ -205,17 +218,26 @@ body {
     clear: both;
     display: table;
   }
+
+  .container img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    right: -40px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
   
   /* Chat containers */
   .container-me {
-    background-color: #4CAF50;
-    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 5px 5px 0 5px;
     float: right;
-    width: 120px;
-    margin: 0px 0px 10px 0px;
+    margin: -10px 10px 30px 0px;
     display: none;
-  
-  
+    position: relative;
   }
   
   /* Clear floats */
@@ -225,13 +247,38 @@ body {
     display: table;
   }
   
-  /* Style time text */
-  .time-right {
-    float: right;
-    color: #aaa;
-  }
+  .container .time-left {
+    width: 50px;
+    height: 20px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid gray;
+    font-size: 10px;
   
-  .msg {
-    color: white;
+    /* Position the tooltip */
+    position: absolute;
+    bottom: -20px;
+    left: -2px;
+    z-index: 1;
   }
+
+  .container-me .time-right {
+    width: 50px;
+    height: 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid green;
+    font-size: 10px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    bottom: -20px;
+    right: -2px;
+    z-index: 1;
+  }
+
   

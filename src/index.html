@@ -431,7 +431,6 @@
          font-size: 22px;"></a>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-
         <div class="deadline">
             <span class="deadline-title">Due Date</span>
             <div class="deadline-wrapper">
@@ -439,20 +438,38 @@
               <input type="text" style="border-width: 0px;" id="datepicker" placeholder="08/06/2020">
             </div>
         </div>
-        
+
+            <div class="task-delegation">
+          <span class="task-delegation-title">Taskboard</span>
+          <div class="task-delegation-wrapper">
+            <a><input type="checkbox" style="margin: 5px;"> Complete the market analysis</a>
+            <a><input type="checkbox" style="margin: 5px;"> Rework the conclusion</a>
+            <a><input type="checkbox" style="margin: 5px;"> Proofread it</a>
+          </div>
+      </div>
+
         <div class="form-popup" id="myForm">
           <div class="chat-wrapper">
               <span class="chat-title">Chatboard</span>
+
+              <div class="container" style="padding: 10px;">
+                <span>Hey guys :)</span>
+                <br>
+                <span class="time-left">11:00am</span>
+                <img src="./fileIcon2.png"/>
+              </div>
+
               <div class="container" style="padding: 10px;">
                 <span>Hello~~ I've completed my section!</span>
                 <br>
-                <span class="time-right"><i>11:00am</i></span>
+                <span class="time-left">11:02am</span>
+                <img src="./fileIcon1.png"/>
               </div>
       
               <div class="container-me" id="myMsgBox" style="padding: 10px;">
                 <span id="msgcontent" class="msg">Great work!!</span>
                 <br>
-                <span class="time-right"><i style="color: aliceblue;">11:05am</i></span>
+                <span class="time-right">11:05am</span>
               </div>
           </div>
       
