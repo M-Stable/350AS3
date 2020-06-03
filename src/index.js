@@ -17,13 +17,13 @@ function myFunc(id) {
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
     if (id != "Demo2") {
-      x.previousElementSibling.className += " w3-red";
+      x.previousElementSibling.className += " w3-purple";
     }
   } else {
     x.className = x.className.replace(" w3-show", "");
     files.className = files.className.replace(" w3-show", "");
     x.previousElementSibling.className = x.previousElementSibling.className.replace(
-      " w3-red",
+      " w3-purple",
       ""
     );
   }
