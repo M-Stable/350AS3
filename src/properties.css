@@ -136,10 +136,9 @@ body {
   .sidenav .form-popup {
     position: absolute;
     width: 280px;
-    height: 380px;
+    height: 370px;
     margin-left: 10px;
     bottom: 10px;
-    border: 3px solid #f1f1f1;
   }
   
   /* Add styles to the form container */
@@ -157,12 +156,6 @@ body {
     border: none;
     background: white;
     resize: none;
-  }
-  
-  /* When the textarea gets focus, do something */
-  .sidenav .form-popup textarea:focus {
-    background-color: #ddd;
-    outline: none;
   }
   
   /* Set a style for the submit/login button */
@@ -200,7 +193,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 255px;
+    width: 260px;
     height: 30px;
     color: white;
     padding: 5px 10px;
@@ -225,6 +218,16 @@ body {
     clear: both;
     display: table;
   }
+
+  .container img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    right: -40px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
   
   /* Chat containers */
   .container-me {
@@ -232,8 +235,7 @@ body {
     border: 2px solid #4CAF50;
     border-radius: 5px 5px 0 5px;
     float: right;
-    width: 110px;
-    margin: 0px 10px 30px 0px;
+    margin: -10px 10px 30px 0px;
     display: none;
     position: relative;
   }
@@ -258,7 +260,7 @@ body {
     /* Position the tooltip */
     position: absolute;
     bottom: -20px;
-    left: 0;
+    left: -2px;
     z-index: 1;
   }
 
@@ -275,7 +277,7 @@ body {
     /* Position the tooltip */
     position: absolute;
     bottom: -20px;
-    right: 0;
+    right: -2px;
     z-index: 1;
   }
 
