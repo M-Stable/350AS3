@@ -54,6 +54,10 @@ function editFolderName(folderName, renameName) {
       newFolderButton.setAttribute("contentEditable", "false"));
 }
 
+function hideNotification() {
+  document.getElementById("notification").style.display = "none";
+}
+
 doShare("Home");
 function doShare(fileName) {
   var i;

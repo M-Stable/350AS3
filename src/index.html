@@ -411,13 +411,13 @@
         href="javascript:void(0)"
         class="file-title"
         onkeydown="return (event.keyCode!=13);">File 1
-        <i
-        id="rename5"
-        class="fa fa-pencil-square-o"
-        style="float: right"
-        onclick="editFolderName('file-name', 'rename5')"
-      ></i>
-     </a>
+          <i
+          id="rename5"
+          class="fa fa-pencil-square-o"
+          style="float: right"
+          onclick="editFolderName('file-name', 'rename5')"
+          ></i>
+        </a>
 
         <a href="javascript:void(0)" class="fa fa-download" style="position: absolute;
         color: black;
@@ -518,9 +518,11 @@
                   <img src="plus.png">
                   <p style="text-align: center;">Add folder</p>
                 </div>
+                <br/><br/>
                 <div id="my_Files_Parent">
-                  <div  class="homepage-folder" onclick="openNav()">
-                    <img src="fileIcon1.png">
+                  <div  class="homepage-folder1" onclick="openNav()">
+                    <img class="image1" src="fileIcon1.png" onclick="hideNotification()">
+                    <img id="notification" class="notification" src="icon2.png">
                     <p style="text-align: center;">File 1</p>
                   </div>
                   <div  class="homepage-folder" onclick="openNav()">
