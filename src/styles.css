@@ -27,15 +27,19 @@ select {
 }
 
 .homepage-folder{
-  width: 175px;
-  height: 200px;
+  width: 140px;
+  height: 100px;
   margin: 0 auto;
   display: inline-block;
 }
 
 .homepage-folder img{
-  width: 100%;
-  height: 80%;
+  width: 70%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 
 input.hidden {
@@ -43,6 +47,34 @@ input.hidden {
   left: -9999px;
 }
 
-.plus-icon{
+.plus-icon {
   cursor: pointer;
+}
+
+.homepage-folder1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 100px;
+  margin: 0 auto;
+  display: inline-block;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.notification {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
 }
