@@ -100,11 +100,11 @@ body {
 
 
   .sidenav .task-delegation {
-    position: absolute;
     width: 260px;
     height: 150px;
     margin-left: 20px;
-    top: 200px;
+    position: absolute;
+    bottom: 390px;
     background-color: white;
     border-radius: 5px;
   }
