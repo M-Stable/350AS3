@@ -13,11 +13,26 @@ function sendMsg() {
   }
 
   $('.task-row').click(function ()
-{
-   $(this).find('input[type=checkbox]').prop("checked", !$(this).find('input[type=checkbox]').prop("checked"));
+{$(this).css({"text-decoration": "line-through"});
+    var clicks = $(this).data('clicks');
+    $(this).find('input[type=checkbox]').prop("checked", !$(this).find('input[type=checkbox]').prop("checked"));
+
+    if (clicks) {
+        $(this).css({"text-decoration": "none"});
+    } else {
+        $(this).css({"text-decoration": "line-through"});
+    }
+    $(this).data("clicks", !clicks);
 });
 
 $('.check').click(function ()
 {
    $(this).prop("checked", !$(this).prop("checked"));
+   var clicks = $(this).data('clicks');
+   if (clicks) {
+    $(this).css({"text-decoration": "none"});
+} else {
+    $(this).css({"text-decoration": "line-through"});
+}
+$(this).data("clicks", !clicks);
 });
