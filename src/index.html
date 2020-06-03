@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <link rel="stylesheet" href="tags.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="properties.css">
   <link
     href="https://fonts.googleapis.com/css?family=RobotoDraft"
     rel="stylesheet"
@@ -429,6 +430,46 @@
         ></a>
         <hr />
       </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <div class="deadline">
+            <span class="deadline-title">Due Date</span>
+            <div class="deadline-wrapper">
+              <span>June 7 2020</span>
+            </div>
+        </div>
+      
+        <div class="form-popup" id="myForm">
+          <div class="chat-wrapper">
+              <span class="chat-title">Chatboard</span>
+              <div class="container" style="padding: 10px;">
+                <span>Hello~~ I've completed my section!</span>
+                <br>
+                <span class="time-right"><i>11:00am</i></span>
+              </div>
+      
+              <div class="container-me" id="myMsgBox">
+                <span id="msgcontent" class="msg">Great work!!</span>
+                <br>
+                <span class="time-right"><i>11:05am</i></span>
+              </div>
+          </div>
+      
+          <textarea id="textArea" placeholder="Type message here..." name="msg" required></textarea>
+      
+          <button type="submit" class="btn" onclick="sendMsg()">
+            <span class="fa fa-paper-plane fa-sm"></span>
+          </button>
+      
+        </div>
+      </div>
+      
+      <span onclick="openNav()">open</span>
+
+
+
     </div>
 
     <script src="index.js"></script>
