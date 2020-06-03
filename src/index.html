@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <link rel="stylesheet" href="tags.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="datepicker.css">
   <link rel="stylesheet" href="properties.css">
   <link
     href="https://fonts.googleapis.com/css?family=RobotoDraft"
@@ -461,10 +462,11 @@
         <div class="deadline">
             <span class="deadline-title">Due Date</span>
             <div class="deadline-wrapper">
-              <span>June 7 2020</span>
+              <!-- From https://jqueryui.com/datepicker/ -->
+              <input type="text" style="border-width: 0px;" id="datepicker" placeholder="08/06/2020">
             </div>
         </div>
-      
+        
         <div class="form-popup" id="myForm">
           <div class="chat-wrapper">
               <span class="chat-title">Chatboard</span>
@@ -486,17 +488,23 @@
           <button type="submit" class="btn" onclick="sendMsg()">
             <span class="fa fa-paper-plane fa-sm"></span>
           </button>
-      
+    
         </div>
-      </div>
-      
+      </div>      
       <span onclick="openNav()">open</span>
-
-
-
     </div>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="index.js"></script>
+<<<<<<< HEAD
     <script src="properties.js"></script>
+=======
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+      </script>
+>>>>>>> 5fb939c64f456b77782b4a4d5cf132f9a1f152d8
   </body>
 </html>
