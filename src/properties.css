@@ -66,19 +66,15 @@ body {
     .sidenav a {font-size: 18px;}
   }
   
-  
-  
-  
-  
   /* The popup chat - hidden by default */
   .sidenav .deadline {
     position: absolute;
     width: 260px;
     height: 70px;
     margin-left: 20px;
-    bottom: 400px;
+    top: 110px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .deadline-title {
@@ -88,7 +84,7 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
   }
   
   .deadline .deadline-wrapper {
@@ -100,18 +96,41 @@ body {
     padding: 5px 10px;
     font-size: 20px;
   }
+
+
+
+  .sidenav .task-delegation {
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    margin-left: 20px;
+    top: 200px;
+    background-color: white;
+    border-radius: 5px;
+  }
   
+  .task-delegation-title {
+    background-color: orange;
+    position: absolute;
+    width: 260px;
+    height: 30px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+  }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  .task-delegation .task-delegation-wrapper {
+    position: absolute;
+    width: 260px;
+    height: 120px;
+    top: 30px;
+    color: black;
+    font-size: 20px;
+  }
+
+  .task-delegation a {
+    font-size: 15px;
+  }
   
   /* The popup chat - hidden by default */
   .sidenav .form-popup {
@@ -171,7 +190,7 @@ body {
     display: table-cell;
     vertical-align: bottom;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 260px;
     background-color: white;
   }
@@ -185,7 +204,7 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
   }
   
   /* Chat containers */
