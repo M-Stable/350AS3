@@ -1,8 +1,7 @@
 body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
-  
-  
+
   .sidenav {
     height: 100%;
     width: 0;
@@ -25,27 +24,39 @@ body {
   }
 
   .sidenav .file-title {
-    padding: 10px;
-    margin-left: 10px;
     text-decoration: none;
+    position: absolute;
+    top: 10px;
+    padding: 0px 0px 0px 10px;
+    margin-left: 20px;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
-
-  .sidenav div {
-    padding: 0px 10px 0px 0px;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
   }
   
   .sidenav a:hover {
+    color: black;
+  }
+
+  .file-title i {
+    padding: 10px;
+    color: #818181;
+    font-size: 20px;
+  }
+
+  .file-title i:hover {
     color: black;
   }
   
   .sidenav .closebtn {
     position: absolute;
     color: red;
-    top: 0;
+    top: 2px;
     right: 0px;
     font-size: 36px;
   }
