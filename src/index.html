@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <link rel="stylesheet" href="tags.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="datepicker.css">
+  <link rel="stylesheet" href="properties.css">
   <link
     href="https://fonts.googleapis.com/css?family=RobotoDraft"
     rel="stylesheet"
@@ -222,10 +224,10 @@
     <!-- Modal that pops up when you click on "Share File" -->
     <div id="id01" class="w3-modal" style="z-index:4">
       <div class="w3-modal-content w3-animate-zoom">
-        <div class="w3-container w3-padding w3-red">
+        <div class="w3-container w3-padding w3-purple">
           <span
             onclick="document.getElementById('id01').style.display='none'"
-            class="w3-button w3-red w3-right w3-xxlarge"
+            class="w3-button w3-purple w3-right w3-xxlarge"
             ><i class="fa fa-remove"></i
           ></span>
           <h2>Share File</h2>
@@ -249,7 +251,7 @@
           <br />
           <div class="w3-section">
             <a
-              class="w3-button w3-red"
+              class="w3-button w3-purple"
               onclick="document.getElementById('id01').style.display='none'"
               >Cancel <i class="fa fa-remove"></i
             ></a>
@@ -266,10 +268,10 @@
     <!-- New modal that appears when you click on "More options" -->
     <div id="demo4" class="modal" style="z-index:4">
       <div class="modal-content">
-        <div class="w3-container w3-padding w3-red" style="height: 60px">
+        <div class="w3-container w3-padding w3-purple" style="height: 60px">
           <span
             onclick="document.getElementById('demo4').style.display='none'"
-            class="w3-button w3-red w3-right w3-large"
+            class="w3-button w3-purple w3-right w3-large"
             ><i class="fa fa-remove"></i
           ></span>
           <h3>More options</h3>
@@ -291,10 +293,10 @@
     <!-- New modal that appears when you click on "More options" -->
     <div id="demo4" class="modal" style="z-index:4">
       <div class="modal-content">
-        <div class="w3-container w3-padding w3-red" style="height: 60px">
+        <div class="w3-container w3-padding w3-purple" style="height: 60px">
           <span
             onclick="document.getElementById('demo4').style.display='none'"
-            class="w3-button w3-red w3-right w3-large"
+            class="w3-button w3-purple w3-right w3-large"
             ><i class="fa fa-remove"></i
           ></span>
         </div>
@@ -321,7 +323,7 @@
       ></i>
       <a
         href="javascript:void(0)"
-        class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right"
+        class="w3-hide-large w3-purple w3-button w3-right w3-margin-top w3-margin-right"
         onclick="document.getElementById('id01').style.display='block'"
         ><i class="fa fa-pencil"></i
       ></a>
@@ -402,6 +404,67 @@
         ></a>
         <hr />
       </div>
+
+      <div id="mySidenav" class="sidenav">
+
+        <a id="file-name"
+        href="javascript:void(0)"
+        class="file-title"
+        onkeydown="return (event.keyCode!=13);">File 1
+        <i
+        id="rename5"
+        class="fa fa-pencil-square-o"
+        style="float: right"
+        onclick="editFolderName('file-name', 'rename5')"
+      ></i>
+     </a>
+
+        <a href="javascript:void(0)" class="fa fa-download" style="position: absolute;
+        color: black;
+        top: 20px;
+        right: 90px;
+        font-size: 20px;"></a>
+         <a href="javascript:void(0)" class="fa fa-trash" style="position: absolute;
+         color: black;
+         top: 17px;
+         right: 65px;
+         font-size: 22px;"></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+        <div class="deadline">
+            <span class="deadline-title">Due Date</span>
+            <div class="deadline-wrapper">
+              <!-- From https://jqueryui.com/datepicker/ -->
+              <input type="text" style="border-width: 0px;" id="datepicker" placeholder="08/06/2020">
+            </div>
+        </div>
+        
+        <div class="form-popup" id="myForm">
+          <div class="chat-wrapper">
+              <span class="chat-title">Chatboard</span>
+              <div class="container" style="padding: 10px;">
+                <span>Hello~~ I've completed my section!</span>
+                <br>
+                <span class="time-right"><i>11:00am</i></span>
+              </div>
+      
+              <div class="container-me" id="myMsgBox" style="padding: 10px;">
+                <span id="msgcontent" class="msg">Great work!!</span>
+                <br>
+                <span class="time-right"><i style="color: aliceblue;">11:05am</i></span>
+              </div>
+          </div>
+      
+          <textarea id="textArea" placeholder="Type message here..." name="msg" required></textarea>
+      
+          <button type="submit" class="btn" onclick="sendMsg()">
+            <span class="fa fa-paper-plane fa-sm"></span>
+          </button>
+    
+        </div>
+      </div>      
+      <span onclick="openNav()">open</span>
     </div>
 
         <!-- Page content -->
@@ -474,6 +537,14 @@
             </div>
           </div>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="index.js"></script>
+    <script src="properties.js"></script>
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+      </script>
   </body>
 </html>
