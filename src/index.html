@@ -299,12 +299,12 @@
           <span>Permissions:</span>
           <br />
           <select name="ohyaaah" id="perms" style="width: 95%;" required>
-            <option disabled="disabled" selected="selected"
+            <option disabled="disabled"
               >Choose permission ...</option
             >
-            <option value="saab">View only (default)</option>
-            <option value="mercedes">Allow notes</option>
-            <option value="audi">Allow edit</option>
+            <option selected="selected" >View only (default)</option>
+            <option>Allow notes</option>
+            <option>Allow edit</option>
           </select>
         </div>
       </div>
@@ -426,7 +426,7 @@
       <!-- Home Page -->
       <div id="Home" class="w3-container file">
         <div>
-          <h1>My Files</h1>
+          <h2 class="homepage-header">My Files</h2>
           <hr />
           <div id="my_Files_Parent">
             <div class="homepage-folder" onclick="openNav()">
@@ -485,7 +485,9 @@
           </div>
         </div>
         <div>
-          <h1>Shared Files</h1>
+          <br>
+          <br>
+          <h2 class="homepage-header">Shared Files</h2>
           <hr />
           <div id="shared_Files_Parent">
             <div class="homepage-folder" onclick="openNav()">
@@ -499,7 +501,9 @@
           </div>
         </div>
         <div>
-          <h1>Shared with me</h1>
+          <br>
+          <br>
+          <h2 class="homepage-header">Shared with me</h2>
           <hr />
           <div id="shared_with_me_Parent" onclick="openNav()">
             <div class="homepage-folder">
