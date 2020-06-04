@@ -1,4 +1,4 @@
-.tag {
+.tags-input .tag {
     margin: 5px;
     padding: 8px;
     display: inline-block;
@@ -27,5 +27,19 @@
     border: 0;
     outline: 0;
     padding: 8px;
+}
+
+.hashtag-input {
+    width: 100%;
+}
+
+.hashtag {
+    margin: 5px;
+    padding: 8px;
+    display: inline-block;
+    /*transition: all 0.3s linear;*/
+    cursor: pointer;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    font-size: medium;
 }
         

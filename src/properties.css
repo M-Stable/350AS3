@@ -69,11 +69,8 @@ body {
 
   .sidenav .tagsboard {
 
-    /* You can remove the border - but everything else should remain the same */
-
     width: 260px;
     flex: 1 1 auto;
-    border: 2px solid black;
     margin: 0 0 10px 20px;
   }
 
