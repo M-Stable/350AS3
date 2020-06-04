@@ -25,10 +25,8 @@ body {
 
   .sidenav .file-title {
     text-decoration: none;
-    position: absolute;
-    top: 10px;
     padding: 0px 0px 0px 10px;
-    margin-left: 20px;
+    margin: 10px 10px 10px 20px;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -69,13 +67,12 @@ body {
   
   /* The popup chat - hidden by default */
   .sidenav .deadline {
-    position: absolute;
     width: 260px;
-    height: 70px;
+    height: 10%;
     margin-left: 20px;
-    top: 110px;
     background-color: white;
     border-radius: 5px;
+    position: relative;
   }
   
   .deadline-title {
@@ -102,12 +99,11 @@ body {
 
   .sidenav .task-delegation {
     width: 260px;
-    height: 150px;
-    margin-left: 20px;
-    position: absolute;
-    bottom: 390px;
+    height: 20%;
+    margin: 10px 10px 0 20px;
     background-color: white;
     border-radius: 5px;
+    position: relative;
   }
   
   .task-delegation-title {
@@ -123,7 +119,6 @@ body {
   .task-delegation .task-delegation-wrapper {
     position: absolute;
     width: 260px;
-    height: 120px;
     top: 30px;
     color: black;
     font-size: 20px;
@@ -161,44 +156,34 @@ body {
   
   /* The popup chat - hidden by default */
   .sidenav .form-popup {
-    position: absolute;
-    width: 280px;
-    height: 370px;
-    margin-left: 10px;
-    bottom: 10px;
-  }
-  
-  /* Add styles to the form container */
-  .sidenav .form-popup {
-    padding: 10px;
+    width: 260px;
+    margin: 10px 10px 10px 20px;
+    position: relative;
+    height: 50%;
   }
   
   /* Full-width textarea */
   .form-popup textarea {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 215px;
-    height: 35px;
+    width: 220px;
+    height: 10%;
     border: none;
     background: white;
     resize: none;
+    margin-top: 5px;
   }
   
   /* Set a style for the submit/login button */
   .form-popup .btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
     background-color: #4CAF50;
     color: white;
     padding: 5px;
-    height: 35px;
+    height: 10%;
     width: 35px;
     border: none;
     cursor: pointer;
     float: right;
     opacity: 0.8;
+    margin-top: 5px;
   }
   
   /* Add some hover effects to buttons */
@@ -207,19 +192,18 @@ body {
   }
   
   .chat-wrapper {
-    display: table-cell;
-    vertical-align: bottom;
-    height: 300px;
+    padding-top: 50px;
     border-radius: 5px;
     width: 260px;
     background-color: white;
+    height: 90%;
   }
   
   .chat-title {
     background-color: #4CAF50;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
     width: 260px;
     height: 30px;
     color: white;
@@ -274,17 +258,6 @@ body {
     clear: both;
     display: table;
   }
-
-  .container-me img {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    top: 0px;
-    left: -40px;
-    border-radius: 15px;
-    border: 1px solid black;
-  }
-
   
   .container .time-others {
     width: 50px;
