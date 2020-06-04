@@ -6,6 +6,13 @@ function uploadFile(){
   $('#upload_files').click();
 }
 
+function copyText(){
+  var copyText = document.getElementById("link");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+}
+
 function sendMsg() {
     document.getElementById("myMsgBox").style.display = "block";
     var text1 = document.getElementById("textarea").value;

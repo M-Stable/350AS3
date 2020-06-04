@@ -76,7 +76,7 @@
       <a id="myFiles" href="javascript:void(0)" class="w3-bar-item w3-button"
         ><i class="fa fa-inbox w3-margin-right"></i>My Files</a
       >
-      
+
       <a
         id="myBtn"
         onclick="myFunc('Demo2'), myFunc('Demo3')"
@@ -262,7 +262,8 @@
           />
           <div>
             <span
-              style="float: right;"
+              id = "More_Options"
+              class="w3-right"
               onclick="document.getElementById('demo4').style.display='block'"
               >More options</span
             >
@@ -287,7 +288,7 @@
     <!-- New modal that appears when you click on "More options" -->
     <div id="demo4" class="modal" style="z-index: 4;">
       <div class="modal-content">
-        <div class="w3-container w3-padding w3-purple" style="height: 60px;">
+        <div class="w3-container w3-padding w3-purple" style="height: 55px;">
           <span
             onclick="document.getElementById('demo4').style.display='none'"
             class="w3-button w3-purple w3-right w3-large"
@@ -295,31 +296,44 @@
           ></span>
           <h3>More options</h3>
         </div>
-        <br />
-        <div style="padding-left: 10px;">
-          <span>Permissions:</span>
+        <div class="w3-panel" style="padding-left: 10px;">
+          <label>Permissions</label>
           <br />
-          <select name="ohyaaah" id="perms" style="width: 95%;" required>
-            <option disabled="disabled"
-              >Choose permission ...</option
-            >
-            <option selected="selected" >View only (default)</option>
+          <select id="perms" style="width: 100%;" required>
+            <option disabled="disabled">Choose permission ...</option>
+            <option selected="selected">View only (default)</option>
             <option>Allow notes</option>
             <option>Allow edit</option>
           </select>
-        </div>
-      </div>
-    </div>
-
-    <!-- New modal that appears when you click on "More options" -->
-    <div id="demo4" class="modal" style="z-index: 4;">
-      <div class="modal-content">
-        <div class="w3-container w3-padding w3-purple" style="height: 60px;">
-          <span
-            onclick="document.getElementById('demo4').style.display='none'"
-            class="w3-button w3-purple w3-right w3-large"
-            ><i class="fa fa-remove"></i
-          ></span>
+          <br />
+          <br />
+          <label>Who has access</label>
+          <br>
+          <select id="access" style="width: 100%;" required>
+            <option disabled="disabled">Choose accessiblity ...</option>
+            <option selected="selected">Restricted - Custom (default)</option>
+            <option>The University of Auckland - Anyone at The University of Auckland can access</option>
+            <option>Anyone with the link - Anyone with the link can access</option>
+          </select>
+          <br />
+          <br />
+          <label>Sharable link:</label>
+          <br />
+          <input
+            id="link"
+            type="text"
+            value="www.ThisisnotarealURLomegalul.com"
+          />
+            <i class="fa fa-clipboard fa-lg fa-border w3-right" onclick="copyText()"></i>
+            <Label></Label>
+          <div class="w3-section" style="padding-bottom: 10px;">
+            <a
+              class="w3-button w3-purple w3-right"
+              onclick="document.getElementById('demo4').style.display='none'"
+              >Done
+            </a>
+            <br />
+          </div>
         </div>
       </div>
     </div>
@@ -428,11 +442,16 @@
       <div id="Home" class="w3-container file">
         <div class="topNav inline">
           <span class="topNav">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for files.."/>
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="myFunction()"
+              placeholder="Search for files.."
+            />
             <img id="userAvatar" src="../images/user2.JPG" />
           </span>
         </div>
-        <hr/>
+        <hr />
         <div>
           <h2 class="homepage-header">My Files</h2>
           <hr />
@@ -493,8 +512,8 @@
           </div>
         </div>
         <div>
-          <br>
-          <br>
+          <br />
+          <br />
           <h2 class="homepage-header">Shared Files</h2>
           <hr />
           <div id="shared_Files_Parent">
@@ -509,8 +528,8 @@
           </div>
         </div>
         <div>
-          <br>
-          <br>
+          <br />
+          <br />
           <h2 class="homepage-header">Shared with me</h2>
           <hr />
           <div id="shared_with_me_Parent" onclick="openNav()">
