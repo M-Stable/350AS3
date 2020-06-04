@@ -3,11 +3,21 @@
     background-repeat: no-repeat; /* Do not repeat the icon image */
     background-size: 20px 20px;
     background-position: 15px 13px;
-    width: 100%; /* Full-width */
+    min-width: 800px; /*hard coded - temporary*/
     font-size: 16px; /* Increase font-size */
     padding: 12px 20px 12px 40px; /* Add some padding */
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 5px; /* Add some space below the input */
     margin-top: 20px;
+
   }
-  
+
+  .topNav #userAvatar {
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px; /* Add some space below the input */
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 3px solid purple;  
+  }
