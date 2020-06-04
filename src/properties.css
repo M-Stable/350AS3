@@ -11,6 +11,8 @@ body {
     right: 0;
     background-color: #f1f1f1;
     overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
     transition: 0.5s;
   }
   
@@ -64,11 +66,22 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  .sidenav .tagsboard {
+
+    /* You can remove the border - but everything else should remain the same */
+
+    width: 260px;
+    flex: 1 1 auto;
+    border: 2px solid black;
+    margin: 0 0 10px 20px;
+  }
+
   
   /* The popup chat - hidden by default */
   .sidenav .deadline {
     width: 260px;
-    height: 10%;
+    height: 70px;
     margin-left: 20px;
     background-color: white;
     border-radius: 5px;
@@ -157,7 +170,7 @@ body {
   /* The popup chat - hidden by default */
   .sidenav .form-popup {
     width: 260px;
-    margin: 10px 10px 10px 20px;
+    margin: 10px 10px 20px 20px;
     position: relative;
     height: 50%;
   }
