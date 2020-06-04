@@ -68,13 +68,16 @@
       ></a>
       <a
         href="javascript:void(0)"
-        class="w3-bar-item w3-button w3-amber w3-button w3-hover-black w3-left-align"
+        class="w3-bar-item w3-button w3-amber w3-hover-orange w3-left-align"
         onclick="document.getElementById('id01').style.display='block'"
-        ><i class="fa fa-share w3-margin-right"></i>Share Files
+      >
+        <i class="fa fa-share w3-margin-right" style="color: #ffffff;"></i
+        ><span style="color: #ffffff;">Share Files</span>
       </a>
 
       <a id="myFiles" href="javascript:void(0)" class="w3-bar-item w3-button"
-        ><i class="fa fa-inbox w3-margin-right"></i>My Files</a
+        ><i class="fa fa-inbox w3-margin-right" style="color: #ffc107;"></i>My
+        Files</a
       >
 
       <a
@@ -82,9 +85,8 @@
         onclick="myFunc('Demo2'), myFunc('Demo3')"
         href="javascript:void(0)"
         class="w3-bar-item w3-button"
-        ><i class="fa fa-inbox w3-margin-right"></i>My Files<i
-          class="fa fa-caret-down w3-margin-left"
-        ></i
+        ><i class="fa fa-inbox w3-margin-right" style="color: #ffc107;"></i>My
+        Files<i class="fa fa-caret-down w3-margin-left"></i
       ></a>
 
       <!-- FOLDERS -->
@@ -215,21 +217,39 @@
         </a>
       </div>
 
-      <a href="#" class="w3-bar-item w3-button"
-        ><i class="fa fa-paper-plane w3-margin-right"></i>Shared Files</a
+      <a href="#" id="sharedFiles" class="w3-bar-item w3-button"
+        ><i
+          class="fa fa-paper-plane w3-margin-right"
+          style="color: #ffc107;"
+        ></i
+        >Shared Files</a
+      >
+      
+      <a href="#" id="sharedWithMe" class="w3-bar-item w3-button"
+        ><i
+          class="fa fa-share-alt w3-margin-right"
+          style="color: #ffc107;"
+        ></i
+        >Shared with me</a
       >
       <a href="#" class="w3-bar-item w3-button"
-        ><i class="fa fa-hourglass-end w3-margin-right"></i>Draft Files</a
+        ><i
+          class="fa fa-hourglass-end w3-margin-right"
+          style="color: #ffc107;"
+        ></i
+        >Draft Files</a
       >
       <a href="#" class="w3-bar-item w3-button"
-        ><i class="fa fa-trash w3-margin-right"></i>Trash</a
+        ><i class="fa fa-trash w3-margin-right" style="color: #ffc107;"></i
+        >Trash</a
       >
       <a
         id="settings"
         href="javascript:void(0)"
         onclick="showSettings()"
         class="w3-bar-item w3-button"
-        ><i class="fa fa-gear w3-margin-right"></i>Settings</a
+        ><i class="fa fa-gear w3-margin-right" style="color: #ffc107;"></i
+        >Settings</a
       >
       <a id="import" href="javascript:void(0)" class="w3-bar-item w3-button">
         <i class="fa fa-empire w3-margin-right" style="margin-left: 5%;"></i>
@@ -532,7 +552,7 @@
           <br />
           <h2 class="homepage-header">Shared with me</h2>
           <hr />
-          <div id="shared_with_me_Parent" onclick="openNav()">
+          <div id="shared_with_me_Parent"  style="padding-bottom: 721px;" onclick="openNav()">
             <div class="homepage-folder">
               <img src="../images/worddoc.png" />
               <p style="text-align: center;">clee383_hw2</p>
@@ -584,6 +604,8 @@
         >&times;</a
       >
 
+      <div class="tagsboard"></div>
+      <script src="tagsboard.js"></script>
       <div class="deadline">
         <span class="deadline-title">Due Date</span>
         <div class="deadline-wrapper">

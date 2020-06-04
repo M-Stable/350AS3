@@ -38,8 +38,10 @@ function addFolder() {
 }
 
 function showSettings() {
-  let x = document.getElementById("import")
-  x.style.display === "none" ? x.style.display = "block" : x.style.display = "none"
+  let x = document.getElementById("import");
+  x.style.display === "none"
+    ? (x.style.display = "block")
+    : (x.style.display = "none");
 }
 
 function editFolderName(folderName, renameName) {
@@ -64,26 +66,52 @@ function doShare(fileName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  // x = document.getElementsByClassName("test");
-  // for (i = 0; i < x.length; i++) {
-  //   x[i].className = x[i].className.replace(" w3-light-grey", "");
-  // }
   document.getElementById(fileName).style.display = "block";
-  // event.currentTarget.className += " w3-light-grey";
 }
 
 var openTab = document.getElementById("homeTab");
 openTab.click();
 
 function replaceMyFile() {
-  let x = document.getElementById('myBtn')
-  x.style.display === "none" ? x.style.display = "block" : x.style.display = "none"
+  let x = document.getElementById("myBtn");
+  x.style.display === "none"
+    ? (x.style.display = "block")
+    : (x.style.display = "none");
 
-  let y = document.getElementById('myFiles')
-  y.style.display === "none" ? y.style.display = "block" : y.style.display = "none"
-
+  let y = document.getElementById("myFiles");
+  y.style.display === "none"
+    ? (y.style.display = "block")
+    : (y.style.display = "none");
 }
 
-/**
- * This section is for tags
- */
+//https://stackoverflow.com/questions/38640215/scroll-to-certain-position-from-top-of-window-on-click
+$(document).ready(function () //When the page is ready, load function
+{
+  $(this).scrollTop(0);
+  $("#myFiles").click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 88,
+      },
+      400
+    );
+  });
+
+  $("#sharedFiles").click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 526,
+      },
+      400
+    );
+  });
+
+  $("#sharedWithMe").click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 800,
+      },
+      400
+    );
+  });
+});
