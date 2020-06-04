@@ -68,7 +68,7 @@ body {
   /* The popup chat - hidden by default */
   .sidenav .deadline {
     width: 260px;
-    height: 10%;
+    height: 70px;
     margin-left: 20px;
     background-color: white;
     border-radius: 5px;
