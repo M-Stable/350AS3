@@ -46,7 +46,7 @@
         onclick="doShare('Home');w3_close();"
         style="vertical-align: auto;"
       >
-      <i class="fa fa-cloud w3-xxlarge" style="color: #9c27b0;"></i>
+        <i class="fa fa-cloud w3-xxlarge" style="color: #9c27b0;"></i>
         <span
           style="
             color: #9c27b0;
@@ -69,17 +69,22 @@
         href="javascript:void(0)"
         class="w3-bar-item w3-button w3-amber w3-button w3-hover-black w3-left-align"
         onclick="document.getElementById('id01').style.display='block'"
-        ><i class="fa fa-share w3-margin-right"></i
-          >Share Files </a>
+        ><i class="fa fa-share w3-margin-right"></i>Share Files
+      </a>
+      
       <a
         id="myBtn"
         onclick="myFunc('Demo2'), myFunc('Demo3')"
         href="javascript:void(0)"
         class="w3-bar-item w3-button"
-        ><i class="fa fa-inbox w3-margin-right"></i>Files (3)<i
+        ><i class="fa fa-inbox w3-margin-right"></i>My Files<i
           class="fa fa-caret-down w3-margin-left"
         ></i
       ></a>
+
+      <a id="myFiles" href="javascript:void(0)" class="w3-bar-item w3-button"
+        ><i class="fa fa-inbox w3-margin-right"></i>My Files</a
+      >
       <!-- FOLDERS -->
       <div id="Demo3" class="w3-hide w3-animate-left">
         <a
@@ -226,7 +231,7 @@
       >
       <a id="import" href="javascript:void(0)" class="w3-bar-item w3-button">
         <i class="fa fa-empire w3-margin-right" style="margin-left: 5%;"></i>
-        Import folders from Cavnas
+        Import folders from Canvas
       </a>
     </nav>
 
@@ -293,12 +298,12 @@
           <span>Permissions:</span>
           <br />
           <select name="ohyaaah" id="perms" style="width: 95%;" required>
-            <option disabled="disabled" selected="selected"
+            <option disabled="disabled"
               >Choose permission ...</option
             >
-            <option value="saab">View only (default)</option>
-            <option value="mercedes">Allow notes</option>
-            <option value="audi">Allow edit</option>
+            <option selected="selected" >View only (default)</option>
+            <option>Allow notes</option>
+            <option>Allow edit</option>
           </select>
         </div>
       </div>
@@ -314,7 +319,6 @@
             ><i class="fa fa-remove"></i
           ></span>
         </div>
-        <p>OH YAHHHH</p>
       </div>
     </div>
 
@@ -415,6 +419,7 @@
       <hr />
     </div>
 
+    <!-- RIGHT FILE PROPERTY BAR -->
     <div id="mySidenav" class="sidenav">
       <a
         id="file-name"
@@ -538,7 +543,7 @@
       <!-- Home Page -->
       <div id="Home" class="w3-container file">
         <div>
-          <h1>My Files</h1>
+          <h2 class="homepage-header">My Files</h2>
           <hr />
           <div id="my_Files_Parent">
             <div class="homepage-folder" onclick="openNav()">
@@ -590,7 +595,9 @@
           </div>
         </div>
         <div>
-          <h1>Shared Files</h1>
+          <br>
+          <br>
+          <h2 class="homepage-header">Shared Files</h2>
           <hr />
           <div id="shared_Files_Parent">
             <div class="homepage-folder" onclick="openNav()">
@@ -604,7 +611,9 @@
           </div>
         </div>
         <div>
-          <h1>Shared with me</h1>
+          <br>
+          <br>
+          <h2 class="homepage-header">Shared with me</h2>
           <hr />
           <div id="shared_with_me_Parent" onclick="openNav()">
             <div class="homepage-folder">
