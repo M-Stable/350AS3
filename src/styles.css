@@ -26,14 +26,14 @@ select {
   font-size: 20px;
 }
 
-.homepage-folder{
+.homepage-folder {
   width: 140px;
   height: 100px;
   margin: 0 auto;
   display: inline-block;
 }
 
-.homepage-folder img{
+.homepage-folder img {
   width: 70%;
   height: 100%;
   display: block;
@@ -60,6 +60,7 @@ input.hidden {
   margin: 0 auto;
   display: inline-block;
 }
+
 .image1 {
   position: relative;
   top: 0;
@@ -71,10 +72,16 @@ input.hidden {
   margin-right: auto;
   cursor: pointer;
 }
+
 .notification {
   position: absolute;
   top: -13px;
   right: 15px;
   width: 30px;
   height: 30px;
+}
+
+.homepage-header{
+  margin-left: 1%;
+  font-weight: bold;
 }
