@@ -29,8 +29,7 @@ function myFunc(id) {
 // hide leftnav elements
 document.getElementById("303Folder").style.display = "none";
 document.getElementById("import").style.display = "none";
-document.getElementById("myBtn").style.display = "block";
-document.getElementById("myFiles").style.display = "none";
+document.getElementById("myBtn").style.display = "none";
 
 //show new folder on click
 function addFolder() {
@@ -64,26 +63,13 @@ function doShare(fileName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  // x = document.getElementsByClassName("test");
-  // for (i = 0; i < x.length; i++) {
-  //   x[i].className = x[i].className.replace(" w3-light-grey", "");
-  // }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" w3-light-grey", "");
+  }
   document.getElementById(fileName).style.display = "block";
-  // event.currentTarget.className += " w3-light-grey";
+  event.currentTarget.className += " w3-light-grey";
 }
 
-var openTab = document.getElementById("homeTab");
+var openTab = document.getElementById("firstTab");
 openTab.click();
-
-function replaceMyFile() {
-  let x = document.getElementById('myBtn')
-  x.style.display === "none" ? x.style.display = "block" : x.style.display = "none"
-
-  let y = document.getElementById('myFiles')
-  y.style.display === "none" ? y.style.display = "block" : y.style.display = "none"
-
-}
-
-/**
- * This section is for tags
- */
