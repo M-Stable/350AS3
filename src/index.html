@@ -43,7 +43,7 @@
         href="javascript:void(0)"
         class="w3-bar-item w3-button w3-border-bottom w3-large"
         id="homeTab"
-        onclick="doShare('Home');w3_close();"
+        onclick="doShare('Home');w3_close();replaceMyFile()"
         style="vertical-align: auto;"
       >
         <i class="fa fa-cloud w3-xxlarge" style="color: #9c27b0;"></i>
@@ -71,6 +71,10 @@
         onclick="document.getElementById('id01').style.display='block'"
         ><i class="fa fa-share w3-margin-right"></i>Share Files
       </a>
+
+      <a id="myFiles" href="javascript:void(0)" class="w3-bar-item w3-button"
+        ><i class="fa fa-inbox w3-margin-right"></i>My Files</a
+      >
       
       <a
         id="myBtn"
@@ -82,9 +86,6 @@
         ></i
       ></a>
 
-      <a id="myFiles" href="javascript:void(0)" class="w3-bar-item w3-button"
-        ><i class="fa fa-inbox w3-margin-right"></i>My Files</a
-      >
       <!-- FOLDERS -->
       <div id="Demo3" class="w3-hide w3-animate-left">
         <a
@@ -332,91 +333,182 @@
       id="myOverlay"
     ></div>
 
-    <!-- Files -->
-    <i
-      class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
-      onclick="w3_open()"
-    ></i>
-    <a
-      href="javascript:void(0)"
-      class="w3-hide-large w3-purple w3-button w3-right w3-margin-top w3-margin-right"
-      onclick="document.getElementById('id01').style.display='block'"
-      ><i class="fa fa-pencil"></i
-    ></a>
+    <!-- Page content -->
+    <div class="w3-main" style="margin-left: 320px;">
+      <!-- File Content -->
+      <i
+        class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top"
+        onclick="w3_open()"
+      ></i>
+      <a
+        href="javascript:void(0)"
+        class="w3-hide-large w3-purple w3-button w3-right w3-margin-top w3-margin-right"
+        onclick="document.getElementById('id01').style.display='block'"
+        ><i class="fa fa-pencil"></i
+      ></a>
 
-    <div id="File1" class="w3-container file">
-      <br />
-      <img
-        class="w3-round w3-animate-top"
-        src="../images/fileIcon3.png"
-        style="width: 20%;"
-      />
-      <h5 class="w3-opacity">File 1</h5>
-      <h4><i class="fa fa-clock-o"></i> File 1, Sep 27, 2015.</h4>
-      <a class="w3-button w3-light-grey" href="#"
-        >Share<i class="w3-margin-left fa fa-mail-reply"></i
-      ></a>
-      <a class="w3-button w3-light-grey" href="#"
-        >Delete<i class="w3-margin-left fa fa-arrow-right"></i
-      ></a>
-      <hr />
+      <div id="File1" class="w3-container file">
+        <br />
+        <img
+          class="w3-round w3-animate-top"
+          src="../images/fileIcon3.png"
+          style="width: 20%;"
+        />
+        <h5 class="w3-opacity">File 1</h5>
+        <h4><i class="fa fa-clock-o"></i> File 1, Sep 27, 2015.</h4>
+        <a class="w3-button w3-light-grey" href="#"
+          >Share<i class="w3-margin-left fa fa-mail-reply"></i
+        ></a>
+        <a class="w3-button w3-light-grey" href="#"
+          >Delete<i class="w3-margin-left fa fa-arrow-right"></i
+        ></a>
+        <hr />
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
 
-    <div id="File2" class="w3-container file">
-      <br />
-      <img
-        class="w3-round w3-animate-top"
-        src="../images/fileIcon5.png"
-        style="width: 20%;"
-      />
-      <h5 class="w3-opacity">File 2</h5>
-      <h4><i class="fa fa-clock-o"></i> File 2, Sep 25, 2015.</h4>
-      <a class="w3-button w3-light-grey"
-        >Share<i class="w3-margin-left fa fa-mail-reply"></i
-      ></a>
-      <a class="w3-button w3-light-grey"
-        >Delete<i class="w3-margin-left fa fa-arrow-right"></i
-      ></a>
-      <hr />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
+      <div id="File2" class="w3-container file">
+        <br />
+        <img
+          class="w3-round w3-animate-top"
+          src="../images/fileIcon5.png"
+          style="width: 20%;"
+        />
+        <h5 class="w3-opacity">File 2</h5>
+        <h4><i class="fa fa-clock-o"></i> File 2, Sep 25, 2015.</h4>
+        <a class="w3-button w3-light-grey"
+          >Share<i class="w3-margin-left fa fa-mail-reply"></i
+        ></a>
+        <a class="w3-button w3-light-grey"
+          >Delete<i class="w3-margin-left fa fa-arrow-right"></i
+        ></a>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </div>
 
-    <div id="File3" class="w3-container file">
-      <br />
-      <img
-        class="w3-round w3-animate-top"
-        src="../images/fileIcon2.png"
-        style="width: 20%;"
-      />
-      <h5 class="w3-opacity">File 3</h5>
-      <h4><i class="fa fa-clock-o"></i> File 3, Sep 23, 2015.</h4>
-      <a class="w3-button w3-light-grey"
-        >Share<i class="w3-margin-left fa fa-mail-reply"></i
-      ></a>
-      <a class="w3-button w3-light-grey"
-        >Delete<i class="w3-margin-left fa fa-arrow-right"></i
-      ></a>
-      <hr />
+      <div id="File3" class="w3-container file">
+        <br />
+        <img
+          class="w3-round w3-animate-top"
+          src="../images/fileIcon2.png"
+          style="width: 20%;"
+        />
+        <h5 class="w3-opacity">File 3</h5>
+        <h4><i class="fa fa-clock-o"></i> File 3, Sep 23, 2015.</h4>
+        <a class="w3-button w3-light-grey"
+          >Share<i class="w3-margin-left fa fa-mail-reply"></i
+        ></a>
+        <a class="w3-button w3-light-grey"
+          >Delete<i class="w3-margin-left fa fa-arrow-right"></i
+        ></a>
+        <hr />
+      </div>
+      <!-- Home Page -->
+      <div id="Home" class="w3-container file">
+        <div>
+          <h1>My Files</h1>
+          <hr />
+          <div id="my_Files_Parent">
+            <div class="homepage-folder" onclick="openNav()">
+              <img src="../images/folderIcon.png" />
+              <p style="text-align: center;">SOFTENG 350</p>
+            </div>
+            <div class="homepage-folder" onclick="openNav()">
+              <img src="../images/folderIcon.png" />
+              <p style="text-align: center;">SOFTENG 351</p>
+            </div>
+            <div class="homepage-folder" onclick="openNav()">
+              <img src="../images/folderIcon.png" />
+              <p style="text-align: center;">SOFTENG 364</p>
+            </div>
+            <div class="homepage-folder plus-icon" onclick="addMyFile()">
+              <img src="../images/plus.png" />
+              <p style="text-align: center;">Add folder</p>
+            </div>
+            <br /><br />
+            <div id="my_Files_Parent">
+              <div class="homepage-folder1" onclick="openNav()">
+                <img
+                  class="image1"
+                  src="../images/fileIcon.png"
+                  onclick="hideNotification()"
+                  ondblclick="doShare('File1'); closeNav(); replaceMyFile()"
+                />
+                <img
+                  id="notification"
+                  class="notification"
+                  src="../images/icon2.png"
+                />
+                <p style="text-align: center;">File 1</p>
+              </div>
+              <div class="homepage-folder" onclick="openNav()">
+                <img
+                  src="../images/fileIcon.png"
+                  ondblclick="doShare('File2'); closeNav()"
+                />
+                <p style="text-align: center;">File 2</p>
+              </div>
+              <div class="homepage-folder" onclick="openNav()">
+                <img
+                  src="../images/fileIcon.png"
+                  ondblclick="doShare('File3'); closeNav()"
+                />
+                <p style="text-align: center;">File 3</p>
+              </div>
+              <!-- https://stackoverflow.com/questions/14414924/upload-image-by-clicking-exisiting-image/14415052 -->
+              <input id="upload_files" class="hidden" type="file" />
+              <div class="homepage-folder plus-icon" onclick="uploadFile()">
+                <img src="../images/plus.png" />
+                <p style="text-align: center;">Add file</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>Shared Files</h1>
+          <hr />
+          <div id="shared_Files_Parent">
+            <div class="homepage-folder" onclick="openNav()">
+              <img src="../images/fileIcon.png" />
+              <p style="text-align: center;">File 1</p>
+            </div>
+            <div class="homepage-folder" onclick="openNav()">
+              <img src="../images/fileIcon.png" />
+              <p style="text-align: center;">File 2</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1>Shared with me</h1>
+          <hr />
+          <div id="shared_with_me_Parent" onclick="openNav()">
+            <div class="homepage-folder">
+              <img src="../images/worddoc.png" />
+              <p style="text-align: center;">clee383_hw2</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- RIGHT FILE PROPERTY BAR -->
@@ -535,90 +627,6 @@
         <button type="submit" class="btn" onclick="sendMsg()">
           <span class="fa fa-paper-plane fa-sm"></span>
         </button>
-      </div>
-    </div>
-    <span onclick="openNav()">open</span>
-
-    <!-- Page content -->
-    <div class="w3-main" style="margin-left: 320px;">
-      <!-- Home Page -->
-      <div id="Home" class="w3-container file">
-        <div>
-          <h1>My Files</h1>
-          <hr />
-          <div id="my_Files_Parent">
-            <div class="homepage-folder" onclick="openNav()">
-              <img src="../images/folderIcon.png" />
-              <p style="text-align: center;">SOFTENG 350</p>
-            </div>
-            <div class="homepage-folder" onclick="openNav()">
-              <img src="../images/folderIcon.png" />
-              <p style="text-align: center;">SOFTENG 351</p>
-            </div>
-            <div class="homepage-folder" onclick="openNav()">
-              <img src="../images/folderIcon.png" />
-              <p style="text-align: center;">SOFTENG 364</p>
-            </div>
-            <div class="homepage-folder plus-icon" onclick="addMyFile()">
-              <img src="../images/plus.png" />
-              <p style="text-align: center;">Add folder</p>
-            </div>
-            <br /><br />
-            <div id="my_Files_Parent">
-              <div class="homepage-folder1" onclick="openNav()">
-                <img
-                  class="image1"
-                  src="../images/fileIcon.png"
-                  onclick="hideNotification()"
-                />
-                <img
-                  id="notification"
-                  class="notification"
-                  src="../images/icon2.png"
-                />
-                <p style="text-align: center;">File 1</p>
-              </div>
-              <div class="homepage-folder" onclick="openNav()">
-                <img src="../images/fileIcon.png" />
-                <p style="text-align: center;">File 2</p>
-              </div>
-              <div class="homepage-folder" onclick="openNav()">
-                <img src="../images/fileIcon.png" />
-                <p style="text-align: center;">File 3</p>
-              </div>
-              <!-- https://stackoverflow.com/questions/14414924/upload-image-by-clicking-exisiting-image/14415052 -->
-              <input id="upload_files" class="hidden" type="file" />
-              <div class="homepage-folder plus-icon" onclick="uploadFile()">
-                <img src="../images/plus.png" />
-                <p style="text-align: center;">Add file</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h1>Shared Files</h1>
-          <hr />
-          <div id="shared_Files_Parent">
-            <div class="homepage-folder" onclick="openNav()">
-              <img src="../images/fileIcon.png" />
-              <p style="text-align: center;">File 1</p>
-            </div>
-            <div class="homepage-folder" onclick="openNav()">
-              <img src="../images/fileIcon.png" />
-              <p style="text-align: center;">File 2</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h1>Shared with me</h1>
-          <hr />
-          <div id="shared_with_me_Parent" onclick="openNav()">
-            <div class="homepage-folder">
-              <img src="../images/worddoc.png" />
-              <p style="text-align: center;">clee383_hw2</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
