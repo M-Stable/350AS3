@@ -1,6 +1,3 @@
-var openInbox = document.getElementById("myBtn");
-openInbox.click();
-
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
@@ -29,9 +26,10 @@ function myFunc(id) {
   }
 }
 
-// hide folder
+// hide leftnav elements
 document.getElementById("303Folder").style.display = "none";
 document.getElementById("import").style.display = "none";
+document.getElementById("myBtn").style.display = "none";
 
 //show new folder on click
 function addFolder() {
