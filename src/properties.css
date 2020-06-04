@@ -25,10 +25,8 @@ body {
 
   .sidenav .file-title {
     text-decoration: none;
-    position: absolute;
-    top: 10px;
     padding: 0px 0px 0px 10px;
-    margin-left: 20px;
+    margin: 10px 10px 10px 20px;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -69,13 +67,12 @@ body {
   
   /* The popup chat - hidden by default */
   .sidenav .deadline {
-    position: absolute;
     width: 260px;
     height: 70px;
     margin-left: 20px;
-    top: 110px;
     background-color: white;
     border-radius: 5px;
+    position: relative;
   }
   
   .deadline-title {
@@ -103,11 +100,10 @@ body {
   .sidenav .task-delegation {
     width: 260px;
     height: 150px;
-    margin-left: 20px;
-    position: absolute;
-    bottom: 390px;
+    margin: 10px 10px 0 20px;
     background-color: white;
     border-radius: 5px;
+    position: relative;
   }
   
   .task-delegation-title {
@@ -161,11 +157,10 @@ body {
   
   /* The popup chat - hidden by default */
   .sidenav .form-popup {
-    position: absolute;
     width: 280px;
     height: 370px;
     margin-left: 10px;
-    bottom: 10px;
+    position: relative;
   }
   
   /* Add styles to the form container */
@@ -176,9 +171,9 @@ body {
   /* Full-width textarea */
   .form-popup textarea {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 10px;
-    width: 215px;
+    width: 220px;
     height: 35px;
     border: none;
     background: white;
@@ -188,7 +183,7 @@ body {
   /* Set a style for the submit/login button */
   .form-popup .btn {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
     background-color: #4CAF50;
     color: white;
