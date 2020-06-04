@@ -46,7 +46,7 @@
         onclick="doShare('Home');w3_close();"
         style="vertical-align: auto;"
       >
-      <i class="fa fa-cloud w3-xxlarge" style="color: #9c27b0;"></i>
+        <i class="fa fa-cloud w3-xxlarge" style="color: #9c27b0;"></i>
         <span
           style="
             color: #9c27b0;
@@ -69,17 +69,22 @@
         href="javascript:void(0)"
         class="w3-bar-item w3-button w3-amber w3-button w3-hover-black w3-left-align"
         onclick="document.getElementById('id01').style.display='block'"
-        ><i class="fa fa-share w3-margin-right"></i
-          >Share Files </a>
+        ><i class="fa fa-share w3-margin-right"></i>Share Files
+      </a>
+      
       <a
         id="myBtn"
         onclick="myFunc('Demo2'), myFunc('Demo3')"
         href="javascript:void(0)"
         class="w3-bar-item w3-button"
-        ><i class="fa fa-inbox w3-margin-right"></i>Files (3)<i
+        ><i class="fa fa-inbox w3-margin-right"></i>My Files<i
           class="fa fa-caret-down w3-margin-left"
         ></i
       ></a>
+
+      <a id="myFiles" href="javascript:void(0)" class="w3-bar-item w3-button"
+        ><i class="fa fa-inbox w3-margin-right"></i>My Files</a
+      >
       <!-- FOLDERS -->
       <div id="Demo3" class="w3-hide w3-animate-left">
         <a
@@ -414,6 +419,7 @@
       <hr />
     </div>
 
+    <!-- RIGHT FILE PROPERTY BAR -->
     <div id="mySidenav" class="sidenav">
       <a
         id="file-name"
