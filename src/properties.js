@@ -15,8 +15,7 @@ function copyText(){
 
 function sendMsg() {
     document.getElementById("myMsgBox").style.display = "block";
-    var text1 = document.getElementById("textarea").value;
-    document.getElementById("msgContent").innerHtml = text1;
+    document.getElementById("textArea").value = "";
   }
   
   function openNav(a) {
