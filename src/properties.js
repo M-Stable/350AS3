@@ -21,10 +21,14 @@ function sendMsg() {
   
   function openNav() {
     document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("userAvatar").style.marginRight = "300px";
+    document.getElementById("myInput").style.minWidth = "800px";
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("userAvatar").style.marginRight = "0";
+    document.getElementById("myInput").style.minWidth = "1100px";
   }
 
   $('.task-row').click(function ()
