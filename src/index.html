@@ -507,7 +507,7 @@
           <h2 class="homepage-header">My Files</h2>
           <hr />
           <div id="my_Files_Parent">
-            <div class="homepage-folder" onclick="openNav(this)" ondrop="dropEventHandler(event)" ondragover="event.preventDefault()">
+            <div class="homepage-folder" onclick="openNav(this)" ondrop="dropEventHandler(event, this)" ondragover="dragOver(event, this)" ondragleave="dragAway(event, this)">
               <img src="../images/folderIcon.png" />
               <p style="text-align: center;">350</p>
             </div>
@@ -539,17 +539,17 @@
                 />
                 <p style="text-align: center;">File 1</p>
               </div>
-              <div id="draggable-file" class="homepage-folder" draggable="true" onclick="openNav(this)" ondragstart="dragEventHandler(event)">
+              <div id="draggable-file" class="homepage-folder" draggable="true" onclick="openNav(this)" ondragstart="dragEventHandler(event, this)">
                 <img id="draggable-file" 
                   src="../images/fileIcon.png"
-                  ondblclick="doShare('File2'); closeNav()"
+                  ondblclick="doShare('File2'); closeNav(); replaceMyFile()"
                 />
                 <p style="text-align: center;">File 2</p>
               </div>
               <div class="homepage-folder" onclick="openNav(this)">
                 <img
                   src="../images/fileIcon.png"
-                  ondblclick="doShare('File3'); closeNav()"
+                  ondblclick="doShare('File3'); closeNav(); replaceMyFile()"
                 />
                 <p style="text-align: center;">File 3</p>
               </div>

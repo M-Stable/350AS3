@@ -84,15 +84,25 @@ function replaceMyFile() {
     : (y.style.display = "none");
 }
 
+function dragOver(theEvent, a) {
+  theEvent.preventDefault();
+  a.style.border = "2px solid #ffc107";
+}
 
-function dragEventHandler(theEvent) {
+function dragAway(theEvent, a) {
+  theEvent.preventDefault();
+  a.style.border = "none";
+}
+
+
+function dragEventHandler(theEvent, a) {
   theEvent.dataTransfer.setData("Text", theEvent.target.id);
-  document.getElementById(fileName).style.display = "block";
 }
 
 function dropEventHandler(theEvent, a) {
   var id = theEvent.dataTransfer.getData("Text");
   document.getElementById(id).style.display = "none";
+  a.style.border = "none";
 } 
 
 //https://stackoverflow.com/questions/38640215/scroll-to-certain-position-from-top-of-window-on-click
