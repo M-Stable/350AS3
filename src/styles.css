@@ -28,6 +28,10 @@
   display: inline-block;
 }
 
+.homepage-folder:hover {
+  border: 2px solid white;
+}
+
 .homepage-folder img {
   width: 70%;
   height: 100%;
@@ -54,6 +58,10 @@ input.hidden {
   height: 100px;
   margin: 0 auto;
   display: inline-block;
+}
+
+.homepage-folder1:hover {
+  border: 2px solid white;
 }
 
 .image1 {
