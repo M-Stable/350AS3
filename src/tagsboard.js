@@ -21,7 +21,6 @@
   
     f1.appendChild(mainInput);
     f1.appendChild(hiddenInput);
-  
 
     addTag("#report");
 
