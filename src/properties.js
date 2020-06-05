@@ -29,12 +29,12 @@ function sendMsg() {
       document.getElementById("userAvatar").style.marginRight = "300px";
       document.getElementById("myInput").style.minWidth = "800px";
       if (a.getElementsByTagName("p")[0].innerHTML === "File 1") {
-        setTimeout("showMsg1()", 100);
-        setTimeout("showMsg2()", 500);
+       showMsg1();
       }
       else {
         document.getElementById("msgcontainer1").style.display = "none";
         document.getElementById("msgcontainer2").style.display = "none";
+        document.getElementById("msgcontainer3").style.display = "none";
         document.getElementById("myMsgBox").style.display = "none";
       }
     }
@@ -42,11 +42,10 @@ function sendMsg() {
 
   function showMsg1() {
     document.getElementById("msgcontainer1").style.display = "block";
+    document.getElementById("msgcontainer2").style.display = "block";
+    document.getElementById("msgcontainer3").style.display = "block";
   }
 
-  function showMsg2() {
-    document.getElementById("msgcontainer2").style.display = "block";
-  }
   
   
   function closeNav() {
