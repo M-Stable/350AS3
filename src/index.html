@@ -481,17 +481,17 @@
           <h2 class="homepage-header">My Files</h2>
           <hr />
           <div id="my_Files_Parent">
-            <div class="homepage-folder" onclick="openNav()">
+            <div class="homepage-folder" onclick="openNav(this)">
               <img src="../images/folderIcon.png" />
-              <p style="text-align: center;">SOFTENG 350</p>
+              <p style="text-align: center;">350</p>
             </div>
-            <div class="homepage-folder" onclick="openNav()">
+            <div class="homepage-folder" onclick="openNav(this)">
               <img src="../images/folderIcon.png" />
-              <p style="text-align: center;">SOFTENG 351</p>
+              <p style="text-align: center;">351</p>
             </div>
-            <div class="homepage-folder" onclick="openNav()">
+            <div class="homepage-folder" onclick="openNav(this)">
               <img src="../images/folderIcon.png" />
-              <p style="text-align: center;">SOFTENG 364</p>
+              <p style="text-align: center;">364</p>
             </div>
             <div class="homepage-folder plus-icon" onclick="addMyFile()">
               <img src="../images/plus.png" />
@@ -499,7 +499,7 @@
             </div>
             <br /><br />
             <div id="my_Files_Parent">
-              <div class="homepage-folder1" onclick="openNav()">
+              <div class="homepage-folder1" onclick="openNav(this)">
                 <img
                   class="image1"
                   src="../images/fileIcon.png"
@@ -513,14 +513,14 @@
                 />
                 <p style="text-align: center;">File 1</p>
               </div>
-              <div class="homepage-folder" onclick="openNav()">
+              <div class="homepage-folder" onclick="openNav(this)">
                 <img
                   src="../images/fileIcon.png"
                   ondblclick="doShare('File2'); closeNav()"
                 />
                 <p style="text-align: center;">File 2</p>
               </div>
-              <div class="homepage-folder" onclick="openNav()">
+              <div class="homepage-folder" onclick="openNav(this)">
                 <img
                   src="../images/fileIcon.png"
                   ondblclick="doShare('File3'); closeNav()"
@@ -542,11 +542,11 @@
           <h2 class="homepage-header">Shared Files</h2>
           <hr />
           <div id="shared_Files_Parent">
-            <div class="homepage-folder" onclick="openNav()">
+            <div class="homepage-folder" onclick="openNav(this)">
               <img src="../images/fileIcon.png" />
               <p style="text-align: center;">File 1</p>
             </div>
-            <div class="homepage-folder" onclick="openNav()">
+            <div class="homepage-folder" onclick="openNav(this)">
               <img src="../images/fileIcon.png" />
               <p style="text-align: center;">File 2</p>
             </div>
@@ -559,7 +559,7 @@
           <hr />
           <div id="shared_with_me_Parent" style="padding-bottom: 721px;">
             <div class="homepage-folder">
-              <img src="../images/worddoc.png" onclick="openNav()" />
+              <img src="../images/worddoc.png" onclick="openNav(this)" />
               <p style="text-align: center;">clee383_hw2</p>
             </div>
           </div>
@@ -574,14 +574,15 @@
         href="javascript:void(0)"
         class="file-title"
         onkeydown="return (event.keyCode!=13);"
-        >File 1
-        <i
+        >
+        
+      </a>
+<a
           id="rename5"
           class="fa fa-pencil-square-o"
-          style="float: right;"
+          style="position: absolute; top: 32px; left: 140px;"
           onclick="editFolderName('file-name', 'rename5')"
-        ></i>
-      </a>
+        ></a>
 
       <a
         href="javascript:void(0)"
@@ -653,14 +654,14 @@
         <div class="chat-wrapper">
           <span class="chat-title">Chatboard</span>
 
-          <div class="container" style="padding: 10px;">
+          <div id="msgcontainer1" class="container" style="padding: 10px;">
             <span>Hey guys :)</span>
             <br />
             <span class="time-others">11:00am</span>
             <img src="../images/user2.JPG" />
           </div>
 
-          <div class="container" style="padding: 10px;">
+          <div id="msgcontainer2" class="container" style="padding: 10px;">
             <span>Hello~~ I've completed my section!</span>
             <br />
             <span class="time-others">11:02am</span>
