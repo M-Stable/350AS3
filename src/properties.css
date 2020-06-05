@@ -184,7 +184,7 @@ body {
   
   /* Set a style for the submit/login button */
   .form-popup .btn {
-    background-color: #4CAF50;
+    background-color: purple;
     color: white;
     padding: 5px;
     height: 10%;
@@ -210,7 +210,7 @@ body {
   }
   
   .chat-title {
-    background-color: #4CAF50;
+    background-color: purple;
     position: absolute;
     top: 0;
     left: 0;
@@ -253,7 +253,7 @@ body {
   /* Chat containers */
   .container-me {
     background-color: white;
-    border: 2px solid #4CAF50;
+    border: 2px solid purple;
     border-radius: 5px 5px 0 5px;
     float: right;
     margin: -5px 10px 30px 0px;
@@ -288,11 +288,11 @@ body {
   .container-me .time-me {
     width: 50px;
     height: 20px;
-    background-color: green;
+    background-color: purple;
     color: white;
     text-align: center;
     border-radius: 0 0 5px 5px;
-    border: 2px solid green;
+    border: 2px solid purple;
     font-size: 10px;
   
     /* Position the tooltip */
