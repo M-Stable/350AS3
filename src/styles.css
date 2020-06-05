@@ -7,6 +7,13 @@
   width: 600px;
 }
 
+.alert{
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  width: 300px;
+}
+
 .modal {
   z-index: 4;
   display: none;
@@ -83,6 +90,12 @@ input.hidden {
 
 .fa-clipboard:hover{
   color: darkgrey;
+}
+
+.file-bubble{
+  background-color:lightgray;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 select {
