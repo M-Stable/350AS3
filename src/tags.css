@@ -34,8 +34,8 @@
 }
 
 .hashtag {
-    margin: 5px;
-    padding: 8px;
+    margin-right: 5px;
+    padding: 5px;
     display: inline-block;
     /*transition: all 0.3s linear;*/
     cursor: pointer;

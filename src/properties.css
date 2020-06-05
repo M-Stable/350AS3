@@ -6,7 +6,6 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     right: 0;
     background-color: #f1f1f1;
@@ -14,6 +13,7 @@ body {
     display: flex;
     flex-flow: column;
     transition: 0.5s;
+    box-shadow: 0 0 7px rgb(195, 194, 194);
   }
   
   .sidenav a {
@@ -28,7 +28,7 @@ body {
   .sidenav .file-title {
     text-decoration: none;
     padding: 0px 0px 0px 10px;
-    margin: 10px 10px 10px 20px;
+    margin: 25px 10px 10px 20px;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -36,7 +36,6 @@ body {
     height: 40px;
     width: 150px;
     background-color: white;
-    border-radius: 10px;
   }
   
   .sidenav a:hover {
@@ -56,10 +55,11 @@ body {
   .sidenav .closebtn {
     position: absolute;
     color: red;
-    top: 2px;
+    top: 17px;
     right: 0px;
     font-size: 36px;
     transition: 0.3s;
+    margin-right: 5px;
   }
   
   @media screen and (max-height: 450px) {
@@ -81,7 +81,6 @@ body {
     height: 70px;
     margin-left: 20px;
     background-color: white;
-    border-radius: 5px;
     position: relative;
   }
   
@@ -92,7 +91,6 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px 5px 0 0;
   }
   
   .deadline .deadline-wrapper {
@@ -112,7 +110,6 @@ body {
     height: 20%;
     margin: 10px 10px 0 20px;
     background-color: white;
-    border-radius: 5px;
     position: relative;
   }
   
@@ -123,7 +120,6 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px 5px 0 0;
   }
   
   .task-delegation .task-delegation-wrapper {
@@ -184,7 +180,7 @@ body {
   
   /* Set a style for the submit/login button */
   .form-popup .btn {
-    background-color: #4CAF50;
+    background-color: #9c27b0;
     color: white;
     padding: 5px;
     height: 10%;
@@ -202,15 +198,14 @@ body {
   }
   
   .chat-wrapper {
-    padding-top: 50px;
-    border-radius: 5px;
+    padding-top: 75px;
     width: 260px;
     background-color: white;
     height: 90%;
   }
   
   .chat-title {
-    background-color: #4CAF50;
+    background-color: #9c27b0;
     position: absolute;
     top: 0;
     left: 0;
@@ -218,9 +213,22 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px 5px 0 0;
   }
   
+/* Chat containers */
+.notification-warning {
+  text-align: center;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  text-align: center;
+  width: 260px;
+  color: #9c27b0;
+  float: right;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
   /* Chat containers */
   .container {
     border: 2px solid #dedede;
@@ -230,8 +238,8 @@ body {
     width: 200px;
     margin: -5px 10px 30px 10px;
     position: relative;
+    display: none;
   }
-  
   
   /* Clear floats */
   .container::after {
@@ -253,10 +261,10 @@ body {
   /* Chat containers */
   .container-me {
     background-color: white;
-    border: 2px solid #4CAF50;
+    border: 2px solid #9c27b0;
     border-radius: 5px 5px 0 5px;
     float: right;
-    margin: -5px 10px 30px 0px;
+    margin: -5px 10px 0 0px;
     display: none;
     position: relative;
     width: 200px;
@@ -288,11 +296,11 @@ body {
   .container-me .time-me {
     width: 50px;
     height: 20px;
-    background-color: green;
+    background-color: #9c27b0;
     color: white;
     text-align: center;
     border-radius: 0 0 5px 5px;
-    border: 2px solid green;
+    border: 2px solid #9c27b0;
     font-size: 10px;
   
     /* Position the tooltip */
