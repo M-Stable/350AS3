@@ -268,8 +268,6 @@
         <div class="w3-panel">
           <label>To</label>
           <input class="w3-input w3-border w3-margin-bottom" type="text" />
-          <label>From</label>
-          <input class="w3-input w3-border w3-margin-bottom" type="text" />
           <label>File</label>
           <div class="tags-input w3-border w3-margin-bottom" type="text"></div>
           <input
@@ -344,7 +342,7 @@
           <input
             id="link"
             type="text"
-            value="www.ThisisnotarealURLomegalul.com"
+            value="www.thisisnotarealURL.com"
           />
           <i
             class="fa fa-clipboard fa-lg fa-border w3-right"
@@ -499,7 +497,7 @@
               onkeyup="myFunction()"
               placeholder="Search for files.."
             />
-            <img id="userAvatar" src="../images/user2.JPG" />
+            <img id="userAvatar" src="../images/user0.png" />
           </span>
         </div>
         <hr />
@@ -530,7 +528,7 @@
                   class="image1"
                   src="../images/fileIcon.png"
                   onclick="hideNotification()"
-                  ondblclick="doShare('File1'); closeNav(); replaceMyFile()"
+                  ondblclick="doShare('File1'); closeNav(); replaceMyFile();"
                 />
                 <img
                   id="notification"
@@ -540,7 +538,7 @@
                 <p style="text-align: center;">File 1</p>
               </div>
               <div id="draggable-file" class="homepage-folder" draggable="true" onclick="openNav(this)" ondragstart="dragEventHandler(event, this)">
-                <img id="draggable-file" 
+                <img
                   src="../images/fileIcon.png"
                   ondblclick="doShare('File2'); closeNav(); replaceMyFile()"
                 />
@@ -585,7 +583,7 @@
           <hr />
           <div id="shared_with_me_Parent" style="padding-bottom: 721px;">
             <div class="homepage-folder">
-              <img src="../images/worddoc.png" onclick="openNav(this)" />
+              <img src="../images/fileIcon.png" onclick="openNav(this)" />
               <p style="text-align: center;">clee383_hw2</p>
             </div>
           </div>
@@ -658,17 +656,17 @@
           <a class="task-row"
             ><input class="check" type="checkbox" style="margin: 5px;" />
             Complete market analysis
-            <img src="../images/fileIcon2.png" />
+            <img src="../images/user0.png" />
           </a>
-          <a class="task-row"
-            ><input class="check" type="checkbox" style="margin: 5px;" /> Rework
+          <a class="task-row" style="text-decoration: line-through;"
+            ><input class="check" type="checkbox" style="margin: 5px;" checked/> Rework
             the conclusion
-            <img src="../images/fileIcon1.png" />
+            <img src="../images/user1.JPG" />
           </a>
           <a class="task-row"
             ><input class="check" type="checkbox" style="margin: 5px;" />
             Proofread & submit report
-            <img src="../images/fileIcon2.png" />
+            <img src="../images/user2.JPG" />
           </a>
           <a style="color: gray; padding-left: 5px;">
             <i class="fa fa-plus"></i>
