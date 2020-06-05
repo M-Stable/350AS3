@@ -294,7 +294,7 @@
             ></a>
             <a
               class="w3-button w3-light-grey w3-right"
-              onclick="document.getElementById('id01').style.display='none'"
+              onclick="document.getElementById('id01').style.display='none';document.getElementById('Success').style.display='block'"
               >Share <i class="fa fa-paper-plane"></i
             ></a>
           </div>
@@ -308,7 +308,7 @@
         <div class="w3-container w3-padding w3-purple" style="height: 55px;">
           <span
             onclick="document.getElementById('demo4').style.display='none'"
-            class="w3-button w3-purple w3-right w3-large"
+            class="w3-button w3-purple w3-right"
             ><i class="fa fa-remove"></i
           ></span>
           <h3>More options</h3>
@@ -318,9 +318,9 @@
           <br />
           <select id="perms" style="width: 100%;" required>
             <option disabled="disabled">Choose permission ...</option>
-            <option selected="selected">View only (default)</option>
+            <option >View only</option>
             <option>Allow notes</option>
-            <option>Allow edit</option>
+            <option selected="selected">Allow edit (default)</option>
           </select>
           <br />
           <br />
@@ -328,10 +328,10 @@
           <br />
           <select id="access" style="width: 100%;" required>
             <option disabled="disabled">Choose accessiblity ...</option>
-            <option selected="selected">Restricted - Custom (default)</option>
-            <option
+            <option >Restricted - Custom </option>
+            <option selected="selected"
               >The University of Auckland - Anyone at The University of Auckland
-              can access</option
+              can access (Default)</option
             >
             <option
               >Anyone with the link - Anyone with the link can access</option
@@ -359,6 +359,32 @@
             </a>
             <br />
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Success" class="modal" style="z-index: 4;">
+      <div class="alert">
+        <div class="w3-container w3-padding w3-purple" style="height: 55px;">
+          <span
+            onclick="document.getElementById('Success').style.display='none'"
+            class="w3-button w3-purple w3-right w3-large"
+            ><i class="fa fa-remove"></i
+          ></span>
+          <h3 style="margin-top: 2px;" >Success<i class="fa fa-check"></i></h3>
+        </div>
+        <div class="w3-container w3-padding w3-center">
+          <span>The following files have been successfully shared:</span>
+          <br />
+          <span class="file-bubble">file1</span>
+          <span class="file-bubble">file2</span>
+          <br />
+          <br />
+          <a
+            class="w3-button w3-purple"
+            onclick="document.getElementById('Success').style.display='none'"
+            >Ok
+          </a>
         </div>
       </div>
     </div>
