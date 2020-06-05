@@ -20,9 +20,15 @@ function sendMsg() {
   }
   
   function openNav() {
-    document.getElementById("mySidenav").style.width = "300px";
-    document.getElementById("userAvatar").style.marginRight = "300px";
-    document.getElementById("myInput").style.minWidth = "800px";
+    if (document.getElementById("mySidenav").style.width === "300px") {
+      closeNav();
+    }
+    else {
+      document.getElementById("mySidenav").style.width = "300px";
+      document.getElementById("userAvatar").style.marginRight = "300px";
+      document.getElementById("myInput").style.minWidth = "800px";
+    }
+   
   }
   
   function closeNav() {
