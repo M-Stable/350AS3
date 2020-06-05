@@ -7,7 +7,7 @@
   
     mainInput.setAttribute("type", "text");
     mainInput.classList.add("hashtag-input");
-    mainInput.setAttribute("placeholder", "Enter hashtag")
+    mainInput.setAttribute("placeholder", " Enter hashtag")
   
     mainInput.addEventListener("keyup", function(event) {
       if (event.keyCode === 13) {

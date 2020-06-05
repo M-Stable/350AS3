@@ -36,7 +36,6 @@ body {
     height: 40px;
     width: 150px;
     background-color: white;
-    border-radius: 10px;
   }
   
   .sidenav a:hover {
@@ -82,7 +81,6 @@ body {
     height: 70px;
     margin-left: 20px;
     background-color: white;
-    border-radius: 5px;
     position: relative;
   }
   
@@ -93,7 +91,6 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px 5px 0 0;
   }
   
   .deadline .deadline-wrapper {
@@ -113,7 +110,6 @@ body {
     height: 20%;
     margin: 10px 10px 0 20px;
     background-color: white;
-    border-radius: 5px;
     position: relative;
   }
   
@@ -124,7 +120,6 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px 5px 0 0;
   }
   
   .task-delegation .task-delegation-wrapper {
@@ -204,7 +199,6 @@ body {
   
   .chat-wrapper {
     padding-top: 75px;
-    border-radius: 5px;
     width: 260px;
     background-color: white;
     height: 90%;
@@ -219,7 +213,6 @@ body {
     height: 30px;
     color: white;
     padding: 5px 10px;
-    border-radius: 5px 5px 0 0;
   }
   
 /* Chat containers */
