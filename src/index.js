@@ -84,6 +84,17 @@ function replaceMyFile() {
     : (y.style.display = "none");
 }
 
+
+function dragEventHandler(theEvent) {
+  theEvent.dataTransfer.setData("Text", theEvent.target.id);
+  document.getElementById(fileName).style.display = "block";
+}
+
+function dropEventHandler(theEvent, a) {
+  var id = theEvent.dataTransfer.getData("Text");
+  document.getElementById(id).style.display = "none";
+} 
+
 //https://stackoverflow.com/questions/38640215/scroll-to-certain-position-from-top-of-window-on-click
 $(document).ready(function () //When the page is ready, load function
 {
