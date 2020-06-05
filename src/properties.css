@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-flow: column;
     transition: 0.5s;
+    box-shadow: 0 0 7px rgb(195, 194, 194);
   }
   
   .sidenav a {
