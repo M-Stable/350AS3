@@ -32,6 +32,9 @@ function sendMsg() {
        showMsg1();
       }
       else {
+        document.getElementById("deadlineWrapper").style.display = "none";
+        document.getElementById("taskWrapper").style.display = "none";
+
         document.getElementById("msgcontainer1").style.display = "none";
         document.getElementById("msgcontainer2").style.display = "none";
         document.getElementById("msgcontainer3").style.display = "none";
@@ -41,6 +44,9 @@ function sendMsg() {
   }
 
   function showMsg1() {
+    document.getElementById("deadlineWrapper").style.display = "block";
+    document.getElementById("taskWrapper").style.display = "block";
+
     document.getElementById("msgcontainer1").style.display = "block";
     document.getElementById("msgcontainer2").style.display = "block";
     document.getElementById("msgcontainer3").style.display = "block";
