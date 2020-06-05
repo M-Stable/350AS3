@@ -28,7 +28,7 @@ body {
   .sidenav .file-title {
     text-decoration: none;
     padding: 0px 0px 0px 10px;
-    margin: 10px 10px 10px 20px;
+    margin: 25px 10px 10px 20px;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -56,7 +56,7 @@ body {
   .sidenav .closebtn {
     position: absolute;
     color: red;
-    top: 2px;
+    top: 17px;
     right: 0px;
     font-size: 36px;
     transition: 0.3s;

@@ -23,7 +23,7 @@
     f1.appendChild(hiddenInput);
   
 
-    addTag("#code");
+    addTag("#report");
 
     function addTag(tagName) {
       let tag = {
