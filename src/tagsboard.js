@@ -22,6 +22,9 @@
     f1.appendChild(mainInput);
     f1.appendChild(hiddenInput);
   
+
+    addTag("#code");
+
     function addTag(tagName) {
       let tag = {
         text: tagName,

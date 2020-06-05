@@ -61,6 +61,7 @@ body {
     right: 0px;
     font-size: 36px;
     transition: 0.3s;
+    margin-right: 5px;
   }
   
   @media screen and (max-height: 450px) {
