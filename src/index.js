@@ -101,7 +101,9 @@ function dragEventHandler(theEvent, a) {
 
 function dropEventHandler(theEvent, a) {
   var id = theEvent.dataTransfer.getData("Text");
-  document.getElementById("draggable-file").style.display = "none";
+  if (id === "draggable-icon") {
+ document.getElementById("draggable-file").style.display = "none";
+  }
   a.style.border = "none";
 } 
 
