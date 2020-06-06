@@ -29,8 +29,11 @@ function sendMsg() {
       document.getElementById("myInput").style.minWidth = "800px";
       if (a.getElementsByTagName("p")[0].innerHTML === "File 1") {
        showMsg1();
+        document.getElementsByName("date")[0].value = "";
+        document.getElementsByName("date")[0].placeholder = "08/06/2020";
       }
       else {
+        
         document.getElementById("deadlineWrapper").style.display = "none";
         document.getElementById("taskWrapper").style.display = "none";
 
@@ -38,6 +41,9 @@ function sendMsg() {
         document.getElementById("msgcontainer2").style.display = "none";
         document.getElementById("msgcontainer3").style.display = "none";
         document.getElementById("myMsgBox").style.display = "none";
+        if (a.getElementsByTagName("p")[0].innerHTML === "File 2") {
+          document.getElementById("deadlineWrapper").style.display = "block";
+        }
       }
     }
   }
