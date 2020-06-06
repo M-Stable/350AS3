@@ -22,7 +22,7 @@
     f1.appendChild(mainInput);
     f1.appendChild(hiddenInput);
 
-    addTag("#report");
+    addTag("#code");
 
     function addTag(tagName) {
       let tag = {
